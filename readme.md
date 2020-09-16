@@ -1,5 +1,5 @@
 # Easy Json Translate
-### Translates every string in a json file using google cloud translation api.
+### Translates every string in a json file using Google Cloud translation api.
 ---
 ## Setup
 You need to setup the api key for google cloud  
