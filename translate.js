@@ -2,9 +2,10 @@ let fs = require("fs");
 
 const { Translate } = require("@google-cloud/translate").v2;
 const translate = new Translate();
-let data = fs.readFileSync("./data/data_en.json");
+
+let data = fs.readFileSync(`./data/${process.argv[3]}.json`);
 data = JSON.parse(data);
-const target = "ru";
+const target = process.argv[2];
 
 async function getDeeper(obj) {
   //Gets deeper...
@@ -16,7 +17,10 @@ async function getDeeper(obj) {
       obj[k] = await translateText(obj[k], target);
     }
   }
-  fs.writeFileSync("./translated.json", JSON.stringify(data));
+  fs.writeFileSync(
+    `./data/data_${target}_translated.json`,
+    JSON.stringify(data)
+  );
 }
 
 async function translateText(text, target) {
@@ -24,7 +28,6 @@ async function translateText(text, target) {
   let [translations] = await translate.translate(text, target);
   translations = Array.isArray(translations) ? translations : [translations];
   let translation = translations[0];
-  console.log(translation);
   return translation;
 }
 
