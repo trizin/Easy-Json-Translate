@@ -1,0 +1,17 @@
+{
+  "hello": "Hello",
+  "text": "Text",
+  "asd": ["asdasd", "asdasdasd"],
+  "fruit": {
+    "apple": { "calories": 22, "bumba": "no" },
+    "appl": { "calories": 22, "bumba": "yes" },
+    "app": { "calories": 22, "bumba": "no" },
+    "ap": {
+      "calories": 22,
+      "bumba": {
+        "calories": 22,
+        "bumba": { "calories": 22, "bumba": { "calories": 22, "bumba": "no" } }
+      }
+    }
+  }
+}
