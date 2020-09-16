@@ -4,7 +4,7 @@
 ## Setup
 You need to setup the api key for google cloud  
 Follow the instructions here https://cloud.google.com/translate/docs/setup
-
+Do `npm install` in project directory.
 ## Usage
 ```
 node translate.js target_language filename
