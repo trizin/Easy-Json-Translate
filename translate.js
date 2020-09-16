@@ -22,7 +22,6 @@ async function getDeeper(obj) {
     JSON.stringify(data)
   );
 }
-
 async function translateText(text, target) {
   // Translates text to target language using google cloud api
   let [translations] = await translate.translate(text, target);
@@ -31,4 +30,6 @@ async function translateText(text, target) {
   return translation;
 }
 
-getDeeper(data);
+getDeeper(data).then(() =>
+  console.log("File saved to", `./data/data_${target}_translated.json`)
+);
