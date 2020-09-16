@@ -1,0 +1,23 @@
+{
+  "name": "json-translator",
+  "version": "1.0.0",
+  "description": "--- ## Setup You need to setup the api key for google cloud   Follow the instructions here https://cloud.google.com/translate/docs/setup",
+  "main": "translate.js",
+  "dependencies": {
+    "@google-cloud/translate": "^6.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trizin/Easy-Json-Translate.git"
+  },
+  "author": "Trizin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trizin/Easy-Json-Translate/issues"
+  },
+  "homepage": "https://github.com/trizin/Easy-Json-Translate#readme"
+}
