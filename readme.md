@@ -10,17 +10,21 @@ Do `npm install` in project directory.
 ## Usage
 
 ```
-node translate.js target_language filename
+node translate.js filename target_languages
 ```
 
 Target language:  
-The two letters language code that you want to translate the text to. ("en","fr","de" etc.)
+The two letters language code that you want to translate the text to. ("en","fr","de" etc.)  
 Filename:
 The name of the file inside the **data** folder. Do not add ".json".("data_en" etc.)
 
 ## Example Use
 
 ```
-node translate.js fr data_en
+node translate.js data_en fr,es,tr
 ```
-This will translate the `data_en.json` file inside the data folder into French and will save it as `data_fr_translated.json` inside data folder.  
+This will translate the `data_en.json` file inside the data folder into French, Spanish, Turkish and will save it as 
+- `data_fr_translated.json`
+- `data_es_translated.json`
+- `data_sp_translated.json`  
+
